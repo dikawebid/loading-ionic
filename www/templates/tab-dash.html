@@ -1,0 +1,15 @@
+<ion-view view-title="Dashboard" ng-controller="LoadingCtrl">
+  <ion-content class="padding">
+    <center><button class="button button-block button-positive" ng-click="showLoading()">Show</button></center>
+    <div ng-repeat="baturan in baturans">
+    <div class="list card">
+      <div class="item item-divider">{{baturan.name}}</div>
+      <div class="item item-body">
+        <div>
+          {{baturan.deskripsi}}
+        </div>
+      </div>
+    </div>
+    </div>
+  </ion-content>
+</ion-view>
